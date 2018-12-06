@@ -18,5 +18,7 @@ chef_version '>= 13.0'
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/cloudGang'
-cookbook 'sshd', '~> 2.0.0'
-cookbook 'ssh', '~> 0.10.24'
+cookbook 'ssh', '~> 0.10.24', :supermarket
+depends "ssh"
+cookbook 'sshd', '~> 2.0.0', :supermarket
+depends 'sshd'

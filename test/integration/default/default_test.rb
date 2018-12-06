@@ -20,3 +20,11 @@ end
 describe package('git') do
   it { should be_installed }
 end
+
+describe user('ckappel') do
+	it { should exist}
+end
+
+describe user('animmervoll') do
+	it { should exist}
+end
